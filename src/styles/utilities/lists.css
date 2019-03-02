@@ -1,0 +1,11 @@
+.todo-list {
+  list-style: none;
+  padding: 0 0 0 45px;
+  margin: 0;
+  &__list-item {
+    display: block;
+    &:not(:last-of-type) {
+      margin-block-end: 15px;
+    }
+  }
+}
