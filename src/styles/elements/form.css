@@ -1,0 +1,31 @@
+#create-task {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 32px;
+  background-color: rgba(255, 255, 255, 1);
+  & .create-task {
+    max-width: 1200px;
+    padding-block-start: 40px;
+    & label {
+      display: block;
+      color: var(--primary-color);
+      font-size: 40px;
+    }
+    & #add-task {
+      background-color: var(--background-white);
+      padding: 20px 0;
+      font-size: 40px;
+      color: var(--text-black);
+      box-shadow: none;
+      border: 0;
+      outline: 0;
+      &::placeholder {
+        color: var(--text-grey);
+      }
+    }
+  }
+}
