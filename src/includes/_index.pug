@@ -1,11 +1,11 @@
-main.container
-  ul.todo
-    li.todo__list-item 
-      button Get new task
-    li.todo__list-item 
-      button Think about it
-    li.todo__list-item 
-      button Smile
-  button.create-new-task.button +
-  #create-task
-    include base/_create-todo
+main.main
+  ul.todo-list
+    li.todo-list__list-item 
+      button.button.button--plain.todo-list__action-button Think about it
+    li.todo-list__list-item 
+      button.task-complete.button.button--plain.todo-list__action-button Get new task
+    li.todo-list__list-item 
+      button.button.button--plain.todo-list__action-button Smile
+  button.create-new-task.button.button--primary +
+#create-task
+  include base/_create-todo
